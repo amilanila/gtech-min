@@ -1,6 +1,6 @@
 var BSON = require('mongodb').BSON;
 var ObjectID = require('mongodb').ObjectID;
-var JobService = require('./JobService').JobService;
+var JobService = require('./JobService.min').JobService;
 
 JobCardService = function(db) {
   this.db = db;  
