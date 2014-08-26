@@ -11,11 +11,11 @@ page.paperSize = {
 var filename = system.args[1];
 var url = system.args[2];
 
-page.open(url, function (status) {    
+page.open(url, function (status) {  
     if (status !== 'success') {
         console.log('Unable to load the address!');
         phantom.exit();
-    } else {        
+    } else {                
         window.setTimeout(function () {  
             var str = config.print.location + filename + '.pdf';
             //var str = 'C:/documents/personal/project/gtech/public/prints/' + filename + '.pdf';
